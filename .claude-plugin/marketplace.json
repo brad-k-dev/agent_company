@@ -1,0 +1,12 @@
+{
+  "name": "agent-company",
+  "owner": { "name": "Brad Kim" },
+  "plugins": [
+    {
+      "name": "agent-company",
+      "description": "CEO 한 줄 지시로 리서치→기획→디자인→개발→QA를 끝내고 배포 준비를 돕는 AI 에이전트 회사.",
+      "version": "0.2.0",
+      "source": "./"
+    }
+  ]
+}
