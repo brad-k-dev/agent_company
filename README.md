@@ -8,7 +8,7 @@ A Claude Code plugin that runs an AI agent company. Give one instruction as the 
 research → planning → design → development → QA, and optionally release prep.
 6 teams, each with 1 lead + 2 members. All 18 are separate subagents with their own personas.
 
-> Agent definitions are written in Korean, so outputs are usually in Korean.
+> Outputs follow the language of your instruction — give it in English and the documents come out in English.
 
 ### Install
 
