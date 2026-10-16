@@ -1,5 +1,52 @@
 # AI Agent Company
 
+[English](#english) · [한국어](#한국어)
+
+## English
+
+A Claude Code plugin that runs an AI agent company. Give one instruction as the CEO, and the company takes it through
+research → planning → design → development → QA, and optionally release prep.
+6 teams, each with 1 lead + 2 members. All 18 are separate subagents with their own personas.
+
+> Agent definitions are written in Korean, so outputs are usually in Korean.
+
+### Install
+
+```
+/plugin marketplace add brad-k-dev/agent_company
+/plugin install agent-company@agent-company
+```
+
+### Usage
+
+Open Claude Code in the folder where you want the app built:
+
+```
+/agent-company:company Build a memo iOS app        # research → QA, automatically
+/agent-company:release                             # release prep, run it yourself after QA
+/agent-company:team-design Add a dark mode screen  # one team only (latest project)
+/agent-company:team-qa Verify again --project memo-ios
+```
+
+Results go to `output/<slug>/` in that folder. If a run stops midway, run `company` again with the same instruction — finished teams are skipped.
+
+`release` only prepares store copy, build settings, and a to-do list for you (`06-release.md`).
+**It never uploads, submits for review, pays, or creates accounts** — you do those yourself from the list.
+
+### Safety
+
+Agents read web content, and some (dev, QA, ops) have Bash and file-write access.
+There is no extra sandbox; it relies on **Claude Code permission prompts**.
+Auto-approving all permissions removes that protection, so use the default mode for untrusted topics.
+
+### License
+
+MIT
+
+---
+
+## 한국어
+
 CEO 한 줄 지시로 리서치 → 기획 → 디자인 → 개발 → QA를 끝내고, 원하면 배포 준비까지 하는 Claude Code 스킬.
 6개 팀, 팀마다 리더 1 + 팀원 2. 18명 모두 별도 서브에이전트이고 각자 페르소나가 있다.
 
