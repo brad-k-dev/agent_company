@@ -4,6 +4,7 @@
 모든 판단과 작성은 각 에이전트가 한다. 에이전트 호출은 Agent 도구의 `subagent_type`으로 한다.
 이 회사는 `agent-company` 플러그인이라 **에이전트 이름 앞에 `agent-company:`를 붙여 호출한다**
 (예: `agent-company:dev-lead`). 리더가 돌려주는 ASSIGN/REWORK의 이름에는 접두사가 없으니 붙여서 쓴다.
+CEO에게 하는 보고·안내는 `brief.md`의 CEO 지시 원문과 같은 언어로 한다 (이 문서와 스킬의 보고 양식은 그 언어로 옮겨 쓴다).
 
 ## 입력
 
